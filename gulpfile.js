@@ -5,7 +5,7 @@ import { direction } from "./config/setting/direction.js";
 // Импорт общих плагинов
 import { plugin } from "./config/setting/plugin.js";
 
-import { date } from "./src/date/index.js";
+import { data } from "./src/data/index.js";
 /*import "./src/data";*/
 // Передаем значения в глобальную переменную
 global.app = {
@@ -14,7 +14,7 @@ global.app = {
   direction,
   gulp,
   plugin,
-  date,
+  data,
 };
 
 // Импорт задач

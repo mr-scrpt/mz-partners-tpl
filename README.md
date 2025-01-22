@@ -1,3 +1,0 @@
-# standart-new
-# ukrhumbat
-# ukrhumbat

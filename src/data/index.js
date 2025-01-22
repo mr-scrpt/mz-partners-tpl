@@ -1,10 +1,10 @@
 import { readFileSync } from "fs";
 import * as nodePath from "path";
 
-const srcFolderDate = nodePath.resolve(`${nodePath.resolve()}/src/date`);
+const srcFolderDate = nodePath.resolve(`${nodePath.resolve()}/src/data`);
 
-export const date = {
-  menu: JSON.parse(readFileSync(`src/date/menu.json`, "utf8")),
+export const data = {
+  menu: JSON.parse(readFileSync(`${srcFolderDate}/menu.json`, "utf8")),
   phone: JSON.parse(readFileSync(`${srcFolderDate}/phone.json`, "utf8")),
   social: JSON.parse(readFileSync(`${srcFolderDate}/social.json`, "utf8")),
   lang: JSON.parse(readFileSync(`${srcFolderDate}/lang.json`, "utf8")),
