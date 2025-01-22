@@ -1,0 +1,17 @@
+<section class="section page__section {{inject.pageSectionClass}}">
+	<div class="section__flat layout__box {{inject.sectionInnerClass}}">
+		<div class="layout__wrap">
+			{% if inject.title %}
+
+				<div class="section__title title">
+
+					<div class="title__main{{ ' title__main_alt' if inject.titleView === 'alt'}}">{{inject.title}}</div>
+					<div class="title__deco{{ ' title__deco_alt' if inject.titleView === 'alt'}}"></div>
+				</div>
+
+			{% endif %}
+
+			{% block content %}{% endblock %}
+		</div>
+	</div>
+</section>

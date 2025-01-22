@@ -1,0 +1,10 @@
+<div class="principle">
+	<div class="principle__inner">
+		{% set cls = cycler("fadeInLeft", "fadeInRight") %}
+		{% for item in principle.principle_list %}
+			{#{{ animatedClass = cls.next() }}#}
+			{% include "block/principle/principle-item.njk" %}
+		{% endfor %}
+	</div>
+
+</div>

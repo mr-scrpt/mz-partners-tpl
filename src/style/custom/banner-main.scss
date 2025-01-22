@@ -1,0 +1,56 @@
+.banner-main {
+	/* &__bg {
+		background-image: url("../img/bg/bg_banner-main.jpg");
+		background-size: cover;
+		background-repeat: no-repeat;
+	}
+ */
+
+	&__inner {
+		display: flex;
+		margin-left: -15px;
+		margin-right: -15px;
+		@include bp768-block() {
+			margin-left: -40px;
+			margin-right: -40px;
+		}
+
+		//align-items: flex-start;
+	}
+
+	&__about {
+		width: 80%;
+
+		padding: 30px 15px;
+		background: $color_blue_light;
+
+		@include bp768-block() {
+			width: 70%;
+			padding: 160px 40px;
+		}
+		@include bp994-block() {
+			width: 50%;
+			padding: 160px 40px;
+		}
+	}
+
+	&__title {
+		margin-bottom: 10px;
+	}
+
+	&__text {
+		color: $color_white;
+		font-size: 14px;
+		line-height: 17px;
+		margin-bottom: 30px;
+		@include bp768-block() {
+			font-size: 16px;
+			line-height: 20px;
+			margin-bottom: 50px;
+		}
+		@include bp994-block() {
+			font-size: 18px;
+			line-height: 22px;
+		}
+	}
+}

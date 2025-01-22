@@ -1,0 +1,6 @@
+{
+	"lang_list": [
+		{ "lang": "укр", "langClass": "ua", "isActive": true },
+		{ "lang": "en", "langClass": "en", "isActive": false }
+	]
+}

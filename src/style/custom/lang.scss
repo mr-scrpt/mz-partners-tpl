@@ -1,0 +1,18 @@
+.lang {
+	&__inner {
+		display: flex;
+		justify-content: center;
+	}
+	&__item {
+		padding: 5px 10px;
+		line-height: 18px;
+		font-weight: 500;
+	}
+	&__link {
+		color: $color_dark;
+		&_active {
+			color: $color_blue;
+			font-weight: 600;
+		}
+	}
+}

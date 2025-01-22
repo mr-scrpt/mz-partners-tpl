@@ -1,0 +1,94 @@
+.footer {
+	&__inner {
+		background: url("../img/bg/bg_footer.jpg") no-repeat;
+		background-size: cover;
+		display: flex;
+		flex-wrap: wrap;
+		padding-top: 20px;
+		padding-bottom: 20px;
+	}
+
+	&__item {
+		padding: 15px 0;
+	}
+
+	&__social {
+		width: 100%;
+		@include bp768-block() {
+			width: 33.3333%;
+			order: 1;
+		}
+	}
+
+	&__menu {
+		display: flex;
+		flex-direction: column;
+		width: 50%;
+
+		@include bp768-block() {
+			align-items: flex-start;
+			width: 33.3333%;
+			order: 0;
+		}
+	}
+
+	&__contacts {
+		width: 50%;
+		text-align: right;
+		@include bp768-block() {
+			width: 33.3333%;
+			order: 2;
+		}
+	}
+	&__logo {
+		display: flex;
+		justify-content: center;
+	}
+
+	&__menu-item {
+		font-size: 14px;
+		line-height: 18px;
+		font-weight: 600;
+		color: $color_white;
+		text-transform: uppercase;
+		margin: 8px 0;
+		@include ts(border-color);
+		@include bp994-block() {
+			font-size: 18px;
+			line-height: 22px;
+			padding-bottom: 3px;
+			border-bottom: 2px solid transparent;
+		}
+
+		&:hover {
+			border-color: $color_white;
+		}
+	}
+
+	&__contacts-title {
+		font-size: 14px;
+		line-height: 18px;
+		font-weight: 600;
+		text-transform: uppercase;
+		color: $color_white;
+		margin-bottom: 10px;
+		@include bp994-block() {
+			font-size: 18px;
+			line-height: 22px;
+		}
+	}
+
+	&__phone-list {
+		margin-bottom: 15px;
+	}
+	&__phone {
+		font-size: 14px;
+		line-height: 18px;
+		color: $color_white;
+	}
+	&__address-line {
+		font-size: 14px;
+		line-height: 18px;
+		color: $color_white;
+	}
+}

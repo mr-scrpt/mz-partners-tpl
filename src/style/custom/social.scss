@@ -1,0 +1,29 @@
+.social {
+	&__line {
+		background-color: $color_dark;
+	}
+
+	&__inner {
+		display: flex;
+		justify-content: flex-end;
+	}
+
+	&__list {
+		display: flex;
+		justify-content: center;
+		/*@include bp768-block() {
+			max-width: 300px;
+			margin-left: auto;
+			margin-right: 0;
+		}*/
+	}
+
+	&__item {
+		margin: 15px;
+		display: flex;
+		align-items: center;
+		@include bp768-block() {
+			margin: 25px;
+		}
+	}
+}

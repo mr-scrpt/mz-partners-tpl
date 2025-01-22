@@ -1,0 +1,87 @@
+.icon {
+	min-width: 1em;
+	margin: 0;
+	padding: 0;
+	display: inline-block;
+	text-align: center;
+	background-position: 50%;
+	background-repeat: no-repeat;
+}
+.icon:empty:after {
+	visibility: hidden;
+	content: "\00A0";
+}
+
+.icon > img,
+.icon > svg {
+	margin: -5.15em 0 -5em;
+	vertical-align: middle;
+}
+
+.icon.icon_cart {
+	background-image: url("../img/icon/icon_cart.svg");
+	width: 43px;
+	height: 43px;
+}
+
+.icon.icon_sandwich {
+	mask-image: url("../img/icon/icon_sandwich.svg");
+	background-color: $color_white;
+	width: 31px;
+	height: 31px;
+}
+
+.icon.icon_arrow {
+	mask-image: url("../img/icon/icon_arrow.svg");
+	background-color: $color_white;
+	width: 32px;
+	height: 18px;
+	/* &_to_bottom {
+		transform: rotate(0deg);
+	}
+	&_to_top {
+		transform: rotate(180deg);
+	} */
+}
+.icon.icon_arrow_long {
+	mask-image: url("../img/icon/icon_arrow_long.svg");
+	background-color: $color_dark;
+	width: 25px;
+	height: 17px;
+}
+.icon.icon_benefits {
+	mask-image: url("../img/icon/icon_benefits.svg");
+	background-color: $color_blue;
+	mask-size: cover;
+	width: 30px;
+	height: 35px;
+
+	@include bp768-block() {
+		width: 62px;
+		height: 72px;
+	}
+}
+
+.icon.icon_social_insta {
+	mask-image: url("../img/icon/icon_social_insta.svg");
+	mask-repeat: no-repeat;
+	background-color: $color_white;
+	width: 24px;
+	height: 24px;
+}
+
+.icon.icon_social_fb {
+	mask-image: url("../img/icon/icon_social_fb.svg");
+	background-color: $color_white;
+	mask-repeat: no-repeat;
+	width: 13px;
+	height: 24px;
+}
+
+.icon.icon_social_mail {
+	mask-image: url("../img/icon/icon_social_mail.svg");
+	background-color: $color_white;
+	mask-repeat: no-repeat;
+	width: 27px;
+	height: 19px;
+}

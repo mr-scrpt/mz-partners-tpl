@@ -1,0 +1,13 @@
+.inner {
+	&__imgbox {
+		max-width: 100%;
+		@include bp768-block() {
+			float: left;
+			max-width: 50%;
+			margin-right: 15px;
+		}
+	}
+	&__clear {
+		clear: both;
+	}
+}

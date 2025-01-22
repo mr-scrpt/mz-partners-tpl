@@ -1,0 +1,20 @@
+<div class="item-l {{inject.parentClassItem}} wow {{ cls.next()}}" data-wow-duration="1s">
+	<div class="item-l__inner">
+		<div class="item-l__imgbox">
+			<img src="{{inject.pathToImgFolder}}{{item.photo}}.jpg" alt="" class="item-l__img img">
+		</div>
+		<div class="item-l__content">
+			<div class="item-l__name">{{item.name}}</div>
+			{% if item.position %}
+				<div class="item-l__position">{{item.position}}</div>
+			{% endif %}
+			<div class="item-l__introtext">{{item.introtext}}</div>
+			<div class="item-l__more more">
+				<a href="#" class="more__inner">
+					<div class="more__text">Дивитись</div>
+					<div class="more__icon icon icon_arrow_long"></div>
+				</a>
+			</div>
+		</div>
+	</div>
+</div>

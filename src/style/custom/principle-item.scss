@@ -1,0 +1,69 @@
+.principle-item {
+	&__inner {
+		display: flex;
+		flex-direction: column;
+		@include bp994-block() {
+			flex-direction: row;
+		}
+	}
+
+	&__name-box {
+		width: 100%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		background: $color_dark;
+		text-align: center;
+		&:nth-child(even) {
+			background: $color_blue;
+		}
+
+		/*@include bp768-block() {
+			width: 300px;
+		}*/
+		@include bp994-block() {
+			width: 400px;
+		}
+	}
+	&__name {
+		color: $color_white;
+		font-size: 18px;
+		text-transform: uppercase;
+		padding: 20px 0;
+		@include bp768-block() {
+			font-size: 24px;
+			line-height: 36px;
+			padding: 40px 0;
+		}
+	}
+	&__about-box {
+		width: 100%;
+		display: flex;
+		//justify-content: center;
+		align-items: center;
+		background: $color_white;
+
+		/*@include bp768-block() {
+			width: calc(100% - 300px);
+		}*/
+		@include bp994-block() {
+			width: calc(100% - 400px);
+		}
+	}
+	&__about {
+		line-height: 18px;
+		padding: 20px 15px;
+
+		@include bp768-block() {
+			font-size: 18px;
+			line-height: 28px;
+			padding: 30px 25px;
+		}
+	}
+
+	&:nth-child(2n) {
+		& .principle-item__name-box {
+			background: $color_blue;
+		}
+	}
+}

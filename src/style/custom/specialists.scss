@@ -1,0 +1,10 @@
+.specialists {
+	&__inner {
+		display: flex;
+		flex-direction: column;
+	}
+
+	&__item {
+		margin-bottom: 15px;
+	}
+}

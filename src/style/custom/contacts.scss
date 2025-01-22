@@ -1,0 +1,33 @@
+.contacts {
+	&__inner {
+		display: flex;
+		flex-direction: column;
+	}
+
+	&__main {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		background-color: $color_gray;
+		margin-bottom: 20px;
+		@include bp768-block() {
+			margin-bottom: 40px;
+		}
+		@include bp994-block() {
+			margin-bottom: 80px;
+		}
+	}
+	&__item {
+		width: 100%;
+		margin-bottom: 10px;
+
+		@include bp994-block() {
+			width: 33.3333%;
+			margin-top: 20px;
+			margin-bottom: 50px;
+		}
+	}
+
+	&__map {
+	}
+}

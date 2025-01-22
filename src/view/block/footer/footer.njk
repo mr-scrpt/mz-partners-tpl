@@ -1,0 +1,44 @@
+<footer class="footer page__footer">
+	<div class="footer__inner layout__wrap">
+		<div class="footer__item footer__social">
+			{% set inject = {
+				parentClass: "footer__logo",
+				logoImg: 'logo_light.svg'
+
+			}%}
+			{% include "block/logo/logo.njk" %}
+
+			<div class="social">
+				<div class="social__list">
+					{% for item in social.social_list %}
+						<a href="#" class="social__item">
+							<div class="icon icon_social_{{item}}"></div>
+						</a>
+					{% endfor %}
+				</div>
+			</div>
+		</div>
+
+		<nav class="footer__item footer__menu">
+
+			{% for item in menu.menu_main %}
+				<a href="{{item.href}}" class="footer__menu-item link">{{item.name}}</a>
+			{% endfor %}
+
+		</nav>
+
+		<div class="footer__item footer__contacts">
+
+			<div class="footer__contacts-title">Телефони:</div>
+			{% set inject = {
+					parentClass: "footer__phone-list",
+					phoneLineClass: "footer__phone"
+				}%}
+			{% include "block/contacts/phone-list.njk" %}
+
+			<div class="footer__contacts-title">Адреса:</div>
+			<div class="footer__address-line">м. Харків, <br> вул. Сумська 34</div>
+
+		</div>
+	</div>
+</footer>

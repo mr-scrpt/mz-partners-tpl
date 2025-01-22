@@ -1,0 +1,21 @@
+{% extends "layout/layout.njk" %}
+
+{% block main %}
+	{% set inject = {
+		title: 'контакти',
+		pageSectionClass: 'page__section-m',
+		sectionInnerClass: 'page__bg-contacts',
+		itemClass: "contacts__item"
+	} %}
+	{% include "block/section/contacts-section.njk" %}
+
+	{% set inject = {
+		title: 'надіслати заявку',
+		titleView: 'alt',
+		pageSectionClass: 'page__section-m',
+		sectionInnerClass: 'page__bg-callback'
+
+	} %}
+	{% include "block/section/callback-section.njk" %}
+
+{% endblock %}

@@ -1,0 +1,21 @@
+{% extends "layout/layout.njk" %}
+
+{% block main %}
+	{% set inject = {
+		title: 'ПРОЄКТИ',
+		pageSectionClass: 'page__section-m',
+		sectionInnerClass: '',
+		pagination: true
+
+	} %}
+	{% include "block/section/project-section.njk" %}
+
+	{% set inject = {
+		title: 'надіслати заявку',
+		titleView: 'alt',
+		pageSectionClass: 'page__section-m',
+		sectionInnerClass: 'page__bg-callback'
+	} %}
+	{% include "block/section/callback-section.njk" %}
+
+{% endblock %}

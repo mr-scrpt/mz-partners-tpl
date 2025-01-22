@@ -1,0 +1,7 @@
+<div class="phone-list {{inject.parentClass}}">
+	<ul class="phone-list__inner">
+		{% for item in phone.phone_numbers %}
+			{% include "block/contacts/phone-list-item.njk" %}
+		{% endfor %}
+	</ul>
+</div>

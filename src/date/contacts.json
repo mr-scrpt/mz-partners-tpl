@@ -1,0 +1,16 @@
+{
+	"contacts_list": [
+		{
+			"name": "Адреса",
+			"text": "м. Харків, вул. Космічна, буд. 21, офіс 529."
+		},
+		{
+			"name": "Телефони",
+			"text": "097 000 000 0 097 000 000 0 097 000 000 0"
+		},
+		{
+			"name": "Наші сторінки",
+			"text": "Instagram: namefirm Facebook: namefirm E-mail: namefirm@gmail.com"
+		}
+	]
+}

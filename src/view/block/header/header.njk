@@ -1,0 +1,29 @@
+<header class="header page__header">
+	<div class="header__inner layout__wrap">
+		{% set inject = {
+			parentClass: "header__logo",
+			logoImg: "logo.svg"
+
+		}%}
+
+		{% include "block/logo/logo.njk" %}
+
+		{% set inject = {
+			parentClass: "header__phone"
+
+		}%}
+		{% include "block/contacts/phone-list.njk" %}
+
+		<div class="header__func">
+			<div class="header__func-box">
+				<div class="header__lang">
+					{% include "block/lang/lang-list.njk" %}
+				</div>
+				<div class="header__callback">
+					{% include "block/callback/callback-button.njk" %}
+				</div>
+			</div>
+		</div>
+
+	</div>
+</header>

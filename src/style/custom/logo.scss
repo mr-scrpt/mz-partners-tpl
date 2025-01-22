@@ -1,0 +1,11 @@
+.logo {
+	&__inner {
+		display: flex;
+	}
+	&__img {
+		max-width: 230px;
+		@include bp994-block() {
+			max-width: 250px;
+		}
+	}
+}

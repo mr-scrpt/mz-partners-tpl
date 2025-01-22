@@ -1,0 +1,68 @@
+.page {
+	&_theme {
+		font: 14px / 1.8 "Montserrat", sans-serif;
+		color: $color_dark;
+		background: #fff;
+	}
+
+	&__header {
+		margin-bottom: 15px;
+	}
+
+	&__line {
+		width: 100%;
+		&_dark {
+			background-color: $color_dark;
+		}
+	}
+	&__section {
+		margin: 0;
+	}
+	&__section-m {
+		margin-bottom: 10px;
+		@include bp768-block() {
+			margin-bottom: 30px;
+		}
+		@include bp994-block() {
+			margin-bottom: 40px;
+		}
+	}
+
+	/*	&__line-social {
+		@include bp768-block() {
+			max-width: 300px;
+			margin-left: auto;
+			margin-right: 0;
+		}
+	}*/
+
+	&__bg-banner {
+		background-image: url("../img/bg/bg_banner-main.jpg");
+		background-size: cover;
+		background-repeat: no-repeat;
+	}
+
+	&__bg-principle {
+		background-image: url("../img/bg/bg_principle.jpg");
+		background-size: cover;
+		background-repeat: no-repeat;
+	}
+
+	&__bg-benefits {
+		background-color: $color_gray;
+	}
+	&__bg-how-work {
+		background-image: url("../img/bg/bg_how-work.jpg");
+		background-size: contain;
+		background-repeat: no-repeat;
+	}
+	&__bg-callback {
+		background-color: $color_blue;
+	}
+
+	&__bg-contacts {
+		background-image: url("../img/bg/bg_contacts.jpg");
+		background-size: contain;
+		background-repeat: no-repeat;
+	}
+}

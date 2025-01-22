@@ -1,0 +1,151 @@
+.button {
+	touch-action: manipulation;
+	position: relative;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	margin: 0;
+	padding: 0;
+	user-select: none;
+	outline: 0;
+	//background: $color_passive;
+	border: 2px solid;
+	border-color: $color_white;
+	white-space: nowrap;
+	border-radius: 3px;
+	text-decoration: none;
+	@include ts(background-color);
+
+	& .button__text {
+		text-transform: uppercase;
+		position: relative;
+		display: inline-block;
+		overflow: hidden;
+		text-overflow: ellipsis;
+		vertical-align: top;
+		font-weight: 600;
+		color: $color_white;
+		@include ts(color);
+	}
+
+	/* HOVER */
+	&:hover {
+		cursor: pointer;
+		background-color: $color_white;
+		.button__text {
+			color: $color_blue;
+		}
+	}
+}
+
+/* Иодификаторы */
+.button_width_available {
+	width: 100%;
+}
+
+.button_font_mono {
+	& .button__text {
+		letter-spacing: 0.1rem;
+		@include bp768-block() {
+			letter-spacing: 0.15rem;
+		}
+	}
+}
+/* Иодификаторы КОНЕЦ */
+
+/*Виды кнопок*/
+.button.button_view {
+	&_alt {
+		border-color: $color_blue;
+		& .button__text {
+			color: $color_blue;
+		}
+	}
+
+	/* &_f {
+		& .button__text {
+			text-transform: none;
+			letter-spacing: normal;
+			font-weight: 400;
+		}
+	}
+	&_t {
+		background: $color_light;
+		border-color: $color_light;
+		&:hover {
+			background: $color_dark;
+		}
+		& .button__text {
+			color: $color_base;
+		}
+	} */
+}
+/*Виды кнопок КОНЕЦ*/
+
+/*Размеры кнопок*/
+
+/*S - Начало*/
+.button_size_s {
+	font-size: 12px;
+	line-height: 14px;
+}
+.button_size_s .button__text {
+	margin: 3px 15px;
+	@include bp768-block() {
+		margin: 3px 30px;
+	}
+
+	@include bp994-block() {
+		margin: 5px 45px;
+	}
+}
+/*S - КОНЕЦ*/
+
+/*M - Начало*/
+.button_size_m {
+	font-size: 13px;
+	line-height: 18px;
+	@include bp768-block() {
+		font-size: 16px;
+		line-height: 22 px;
+	}
+}
+
+.button_size_m .button__text {
+	margin: 5px 8px;
+	@include bp768-block() {
+	}
+	@include bp994-block() {
+		margin: 7px 15px;
+	}
+}
+/*M - КОНЕЦ*/
+
+/*L - Начало*/
+.button_size_l {
+	font-size: 18px;
+	line-height: 22px;
+}
+.button_size_l .button__text {
+	margin: 4.5px 35px;
+
+	@include bp994-block() {
+		margin: 10px 25px;
+	}
+}
+/*L - КОНЕЦ*/
+
+/*XL - Начало*/
+.button_size_xl {
+	font-size: 22px;
+	line-height: 25px;
+}
+
+.button_size_xl .button__text {
+	margin: 5.5px 55px;
+
+	@include bp994-block() {
+		margin: 12px 90px;
+	}
+}
+/*XL - КОНЕЦ*/

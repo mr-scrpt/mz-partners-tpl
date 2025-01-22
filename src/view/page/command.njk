@@ -1,0 +1,19 @@
+{% extends "layout/layout.njk" %}
+
+{% block main %}
+	{% set inject = {
+		title: 'команда',
+		pageSectionClass: 'page__section-m',
+		sectionInnerClass: ''
+	} %}
+	{% include "block/section/specialists-section.njk" %}
+
+	{% set inject = {
+		title: 'надіслати заявку',
+		titleView: 'alt',
+		pageSectionClass: 'page__section-m',
+		sectionInnerClass: 'page__bg-callback'
+	} %}
+	{% include "block/section/callback-section.njk" %}
+
+{% endblock %}

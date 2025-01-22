@@ -1,0 +1,19 @@
+.form-call {
+	&__inner {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		@include bp994-block() {
+			flex-direction: row;
+		}
+	}
+
+	&__row {
+		margin-bottom: 15px;
+		@include bp994-block() {
+			margin-bottom: 0;
+			margin-left: 15px;
+			margin-right: 15px;
+		}
+	}
+}

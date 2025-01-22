@@ -1,0 +1,43 @@
+.header {
+	&__inner {
+		display: flex;
+		flex-wrap: wrap;
+	}
+
+	&__logo {
+		width: 100%;
+		display: flex;
+		justify-content: center;
+
+		@include bp768-block() {
+			width: 255px;
+			order: 2;
+		}
+	}
+
+	&__phone {
+		width: 50%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		@include bp768-block() {
+			width: calc(50% - 127.5px);
+			order: 1;
+			justify-content: flex-start;
+		}
+	}
+	&__func {
+		width: 50%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		@include bp768-block() {
+			width: calc(50% - 127.5px);
+			order: 3;
+			justify-content: flex-end;
+		}
+	}
+	&__lang {
+		margin-bottom: 10px;
+	}
+}

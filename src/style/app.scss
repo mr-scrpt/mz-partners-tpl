@@ -1,0 +1,90 @@
+/* Библиотеки */
+@import "./lib/smartgrid.scss";
+/* @import "./lib/jquery-ui.min.css"; */
+/* @import "./lib/aos.css"; */
+/* @import "./lib/jquery.jgrowl.min.css"; */
+/* @import "./lib/ajax-form.css"; */
+/* INIT */
+@import "./preset/reset.scss";
+@import "./preset/var.scss";
+@import "./preset/mixins.scss";
+@import "./preset/text.scss";
+@import "./preset/fonts.scss";
+@import "./preset/animation.scss";
+@import "./preset/wow.scss";
+
+/* Блоки */
+@import "./block/button.scss";
+@import "./block/input.scss";
+@import "./block/textarea.scss";
+@import "./block/checkbox.scss";
+@import "./block/img.scss";
+@import "./block/title.scss";
+@import "./block/icon.scss";
+@import "./block/link.scss";
+@import "./block/deco.scss";
+@import "./block/text.scss";
+@import "./block/relative-box.scss";
+@import "./block/block-s.scss";
+@import "./block/competence.scss";
+@import "./block/item-t.scss";
+@import "./block/pagination.scss";
+
+/* Фундоментальные Блоки */
+@import "./fundamental/page.scss";
+@import "./fundamental/layout.scss";
+@import "./fundamental/header.scss";
+@import "./fundamental/footer.scss";
+@import "./fundamental/section.scss";
+
+/* Блоки Верстки */
+@import "./custom/logo.scss";
+@import "./custom/phone-list.scss";
+@import "./custom/lang.scss";
+@import "./custom/banner-main.scss";
+@import "./custom/social.scss";
+
+@import "./custom/principle.scss";
+@import "./custom/principle-item.scss";
+
+@import "./custom/project.scss";
+@import "./custom/item-f.scss";
+@import "./custom/more.scss";
+
+@import "./custom/benefits.scss";
+@import "./custom/benefits-item.scss";
+
+@import "./custom/how-work.scss";
+@import "./custom/item-c.scss";
+
+@import "./custom/callback.scss";
+@import "./custom/form-call.scss";
+
+@import "./custom/history.scss";
+
+@import "./custom/specialists.scss";
+@import "./custom/item-l.scss";
+
+@import "./custom/news.scss";
+
+@import "./custom/career.scss";
+@import "./custom/contacts.scss";
+@import "./custom/map.scss";
+
+@import "./custom/inner.scss";
+
+/* Навигация */
+@import "./custom/nav/menu-main.scss";
+
+* {
+  box-sizing: border-box;
+}
+html {
+  height: 100%;
+  overflow-y: scroll;
+}
+
+body {
+  height: 100%;
+  -webkit-overflow-scrolling: touch;
+}

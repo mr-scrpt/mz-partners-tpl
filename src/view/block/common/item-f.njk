@@ -1,0 +1,20 @@
+<div class="item-f {{inject.parentClassItem}} {{inject.effectsClass}}" data-wow-duration="1s" data-wow-delay="{{loop.index  / 4}}s" >
+	<div class="item-f__inner">
+		<div class="item-f__img-box">
+			<img src="{{inject.pathToImgFolder}}_{{loop.index}}.jpg" alt="{{item.title}}" class="item-f__img">
+		</div>
+		<div class="item-f__body">
+			<div class="item-f__title">{{item.title}}</div>
+			<div class="item-f__text">{{item.text.slice(1, 120)}}</div>
+			{% if inject.aboutButton %}
+				<div class="item-f__more more">
+					<a href="#" class="more__inner">
+						<div class="more__text">Дивитись</div>
+						<div class="more__icon icon icon_arrow_long"></div>
+					</a>
+				</div>
+			{% endif %}
+
+		</div>
+	</div>
+</div>

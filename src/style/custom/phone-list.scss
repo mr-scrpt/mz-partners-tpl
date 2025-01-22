@@ -1,0 +1,13 @@
+.phone-list {
+	&__inner {
+		display: flex;
+
+		flex-direction: column;
+		/* justify-content: space-between; */
+	}
+
+	&__item {
+		line-height: 18px;
+		font-weight: 500;
+	}
+}

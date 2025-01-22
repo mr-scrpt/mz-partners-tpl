@@ -1,0 +1,29 @@
+.block-s {
+	position: relative;
+	&__body {
+		position: absolute;
+		transform: translateX(-99999px);
+		z-index: 3;
+
+		@include bp994-block() {
+			transform: translateX(0);
+			position: relative;
+		}
+	}
+
+	&_open {
+		.block-s__body {
+			animation: slideMenuOpen 1s forwards;
+		}
+	}
+
+	&_close {
+		.block-s__body {
+			animation: slideMenuClose 1s forwards;
+			@include bp994-block() {
+				transform: translateX(0);
+				animation: none;
+			}
+		}
+	}
+}

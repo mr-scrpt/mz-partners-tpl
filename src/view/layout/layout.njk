@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="ru">
+	{% include "../block/head.njk" %}
+
+	<body class="page page_theme layout">
+		{#  {% include "block/common/debug.njk" %} #}
+		{% include "block/header/header.njk" %}
+		{% include "block/line/menu-line.njk" %}
+		{% block main %}{% endblock %}
+		{% include "../block/script.njk" %}
+		{% include "block/footer/footer.njk" %}
+	</body>
+
+</html>

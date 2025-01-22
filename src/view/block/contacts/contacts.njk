@@ -1,0 +1,17 @@
+<div class="contacts">
+	<div class="contacts__inner">
+		<div class="contacts__main">
+			{% for item in contacts.contacts_list %}
+				{% include "block/common/item-c.njk" %}
+			{% endfor %}
+		</div>
+		<div class="contacts__map map">
+			<div class="map__inner">
+				<div class="map__box">
+					<iframe class="map__item" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2563.803306248706!2d36.21800665158569!3d50.01504177931656!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4127a1234e73cbdb%3A0xcdfc0bda6e6ba6bc!2z0YPQuy4g0JrQvtGB0LzQuNGH0LXRgdC60LDRjywgMjEsINCl0LDRgNGM0LrQvtCyLCDQpdCw0YDRjNC60L7QstGB0LrQsNGPINC-0LHQu9Cw0YHRgtGMLCA2MTAwMA!5e0!3m2!1sru!2sua!4v1636805654129!5m2!1sru!2sua" allowfullscreen="" loading="lazy"></iframe>
+				</div>
+			</div>
+		</div>
+
+	</div>
+</div>

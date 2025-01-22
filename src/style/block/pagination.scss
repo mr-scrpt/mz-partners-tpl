@@ -1,0 +1,29 @@
+.pagination {
+	&__inner {
+		display: flex;
+		justify-content: center;
+	}
+	&__box {
+		background-color: $color_gray;
+		display: flex;
+		justify-content: center;
+	}
+
+	&__item {
+		width: 35px;
+		height: 35px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		text-decoration: none;
+		color: $color_dark;
+		@include ts(background-color, color);
+		&:hover {
+			background-color: $color_blue;
+			color: $color_white;
+		}
+	}
+
+	&__text {
+	}
+}

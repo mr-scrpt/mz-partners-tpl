@@ -1,0 +1,17 @@
+.career {
+	&__inner {
+		@include row-flex();
+	}
+
+	&__item {
+		@include col();
+		@include size(12);
+		@include size-bp540(6);
+		&:last-child {
+			@include size-bp540(12);
+			@include size-bp768(4);
+		}
+		@include size-bp768(4);
+		margin-bottom: 15px;
+	}
+}

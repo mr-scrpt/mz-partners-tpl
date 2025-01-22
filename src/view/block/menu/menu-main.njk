@@ -1,0 +1,15 @@
+<nav class="menu-main block-s" data-adaptive-width="{{inject.menuBrakePoint}}">
+	<div class="menu-main__inner block-s__inner">
+		<div class="block-s__controller menu-main__controller">
+			<div class="menu-main__controller-icon">
+				<span class="icon icon_sandwich"></span>
+			</div>
+			<div class="menu-main__controller-text">Меню</div>
+		</div>
+		<div class="block-s__body menu-main__list">
+			{% for item in menu.menu_main %}
+				{% include "block/menu/menu-main-item.njk" %}
+			{% endfor %}
+		</div>
+	</div>
+</nav>

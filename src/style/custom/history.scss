@@ -1,0 +1,51 @@
+.history {
+	position: relative;
+	&__inner {
+		position: relative;
+		z-index: 1;
+		display: flex;
+		flex-wrap: wrap;
+	}
+	&__textbox {
+		width: 100%;
+		position: relative;
+		z-index: 1;
+		&:after {
+			content: "";
+			position: absolute;
+			z-index: 0;
+			width: 100%;
+			//height: 100%;
+			top: -70px;
+			bottom: 0;
+			background-color: $color_gray;
+			@include bp768-block() {
+				top: -150px;
+				bottom: 0;
+			}
+			@include bp994-block() {
+				bottom: 120px;
+			}
+		}
+		@include bp994-block() {
+			width: 50%;
+		}
+	}
+
+	&__text {
+		position: relative;
+		z-index: 1;
+		margin-left: 15px;
+		margin-right: 15px;
+		margin-bottom: 15px;
+	}
+	&__imgbox {
+		width: 100%;
+		@include bp994-block() {
+			width: 50%;
+		}
+	}
+	&__img {
+		width: 100%;
+	}
+}

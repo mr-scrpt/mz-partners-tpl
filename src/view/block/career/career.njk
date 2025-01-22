@@ -1,0 +1,17 @@
+<div class="career">
+	<div class="career__inner">
+		{% set inject = {
+			parentClassItem: "career__item",
+			effectsClass: "wow fadeInRight",
+			pathToImgFolder: "./img/career/career"
+		} %}
+		{% for item in career.career_list %}
+			{% include "block/common/item-f.njk" %}
+		{% endfor %}
+
+	</div>
+
+	{% if inject.pagination %}
+		{% include "block/pagination/pagination.njk" %}
+	{% endif %}
+</div>

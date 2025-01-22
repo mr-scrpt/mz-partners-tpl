@@ -1,0 +1,13 @@
+<div class="news">
+	<div class="news__inner">
+		{% set inject = {
+			parentClassItem: "news__item",
+			pathToImgFolder: "./img/news/"
+		} %}
+		{% set cls = cycler("fadeInLeft", "fadeInRight") %}
+		{% for item in news.news_list %}
+			{#{% include "block/specialists/specialists-item.njk" %}#}
+			{% include "block/common/item-l.njk" %}
+		{% endfor %}
+	</div>
+</div>

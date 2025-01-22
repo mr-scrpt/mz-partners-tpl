@@ -1,0 +1,71 @@
+.menu-main {
+	&__inner {
+		display: flex;
+	}
+	&__controller {
+		display: flex;
+		align-items: center;
+		padding: 10px 0;
+		@include bp768-block() {
+			display: none;
+		}
+	}
+
+	&__controller-icon {
+		margin-right: 10px;
+	}
+	&__controller-text {
+		font-size: 18px;
+		font-weight: 600;
+		text-transform: uppercase;
+		color: #fff;
+	}
+
+	&__list {
+		background-color: $color_dark;
+		width: calc(100% + 30px);
+		margin: 0 -15px;
+		display: flex;
+		flex-direction: column;
+		@include bp768-block() {
+			flex-direction: row;
+			justify-content: space-around;
+		}
+	}
+
+	&__item {
+		display: flex;
+	}
+
+	&__item-link {
+		width: 100%;
+		font-size: 18px;
+		font-weight: 600;
+		text-transform: uppercase;
+		color: $color_white;
+		padding: 5px 5px 5px 40px;
+		&:active {
+			background-color: $color_blue;
+		}
+		@include bp768-block() {
+			font-size: 14px;
+			padding: 10px 10px;
+			@include ts(background-color);
+			&:hover {
+				background-color: $color_blue;
+			}
+		}
+		@include bp994-block() {
+			font-size: 16px;
+			padding: 15px 25px;
+		}
+
+		@include bp1280-block() {
+			font-size: 18px;
+			padding: 15px 30px;
+		}
+		&_active {
+			background-color: $color_blue;
+		}
+	}
+}

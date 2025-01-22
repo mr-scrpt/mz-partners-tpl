@@ -1,0 +1,17 @@
+.competence {
+	&__inner {
+		display: flex;
+	}
+
+	&__list {
+		flex-direction: column;
+	}
+
+	&__item {
+		margin-bottom: 15px;
+		/* overflow: hidden; */
+		@include bp768-block() {
+			margin-bottom: 20px;
+		}
+	}
+}

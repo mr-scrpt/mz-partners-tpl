@@ -1,0 +1,116 @@
+.item-f {
+	&__inner {
+		height: 100%;
+		display: flex;
+		flex-direction: column;
+		background-color: $color_gray;
+		@include ts(background-color);
+	}
+
+	&__img-box {
+		overflow: hidden;
+		width: 100%;
+	}
+
+	&__img {
+		width: 100%;
+		height: 100%;
+		animation: unscale $th forwards;
+		object-fit: cover;
+		/*	@include bp768-block() {
+			animation: unscale $th forwards;
+			&:hover {
+				animation: scale $th forwards;
+			}
+		}*/
+	}
+
+	&__body {
+		padding: 30px 15px;
+		display: flex;
+		flex-direction: column;
+		flex-grow: 1;
+		align-items: center;
+		//background-color: yellow;
+	}
+
+	&__title {
+		font-size: 18px;
+		line-height: 28px;
+		font-weight: 500;
+		margin-bottom: 25px;
+		@include bp768-block() {
+			font-size: 22px;
+			@include ts(color);
+		}
+	}
+
+	&__text {
+		line-height: 18px;
+		margin-bottom: 25px;
+
+		@include bp768-block() {
+			font-size: 18px;
+			line-height: 26px;
+			@include ts(color);
+		}
+	}
+
+	&__more {
+		margin: auto 0 0 auto;
+		padding: 5px 10px;
+		display: flex;
+		align-items: center;
+		background-color: $color_white;
+	}
+
+	&__link {
+		color: $color_dark;
+		margin-right: 15px;
+		@include bp768-block() {
+			@include ts(color);
+		}
+	}
+
+	/*&__icon {
+		@include bp768-block() {
+			@include ts(background-color);
+		}
+	}*/
+}
+
+.item-f:hover {
+	.item-f__inner {
+		@include bp768-block() {
+			background-color: $color_blue;
+		}
+	}
+	.item-f__img {
+		@include bp768-block() {
+			animation: scale $th forwards;
+		}
+	}
+
+	.item-f__title {
+		@include bp768-block() {
+			color: $color_white;
+		}
+	}
+
+	.item-f__text {
+		@include bp768-block() {
+			color: $color_white;
+		}
+	}
+
+	.item-f__link {
+		@include bp768-block() {
+			color: $color_white;
+		}
+	}
+	/*	.icon {
+		@include bp768-block() {
+			background-color: $color_white;
+		}
+	}*/
+}
